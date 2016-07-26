@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Widgets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <section>
+      <h1>Current temperature: <span id="current-temperature"></span></h1>
+      <select id="current-city">
+        <option value="london">London</option>
+        <option value="newyork">New York</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+      </select>
+    </section>
+
+
+
+    <% @widgets.each do |widget| %>
+      <tr>
+        <td><%= link_to 'Show', widget %></td>
+        <td><%= link_to 'Edit', edit_widget_path(widget) %></td>
+        <td><%= link_to 'Destroy', widget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Widget', new_widget_path %>
