@@ -1,6 +1,11 @@
 ;(function(exports){
 
-  var getJSON = function(callback, widgetName, location) {
+  var getFreeLocation = require('./grid-functions').getFreeLocation;
+
+  var getJSON = function(callback, widgetName) {
+
+    var location = getFreeLocation();
+
     $.ajax({
       url: "/api/widgets",
       dataType: 'json',

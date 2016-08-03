@@ -6,10 +6,10 @@
                 "location": "new york",
                 "unit": "celsius"
             },
-            "active": false,
+            "active": true,
             "location": {
-                "row": 1,
-                "column": 0,
+                "row": 0,
+                "column": 1,
                 "height": 1,
                 "width": 1
             }
@@ -32,10 +32,10 @@
                 "tram": false,
                 "london-overground": false
             },
-            "active": false,
+            "active": true,
             "location": {
-                "row": 1,
-                "column": 0,
+                "row": 0,
+                "column": 2,
                 "height": 1,
                 "width": 1
             }
@@ -51,7 +51,7 @@
             },
             "location": {
                 "row": 0,
-                "column": 0,
+                "column": 1,
                 "height": 1,
                 "width": 1
             },
@@ -66,12 +66,12 @@
                 ]
             },
             "location": {
-                "row": 0,
+                "row": 1,
                 "column": 0,
                 "height": 1,
                 "width": 1
             },
-            "active": false
+            "active": true
         }
     ]
 }
