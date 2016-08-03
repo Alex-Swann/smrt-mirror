@@ -8,7 +8,8 @@
                           containment: "#grid-container",
                           cursor: "pointer" };
 
-  var setDragBox = function(element, location)  {
+  var setDragBox = function(element)  {
+    var location = getFreeLocation();
     var widgetName = $(element).data('name');
     if($(element).parent().hasClass('active')) {
       $("#grid-container").append("<div id='widget-box-"+widgetName+
@@ -31,6 +32,7 @@
   };
 
   var getFreeLocation = function()  {
+    //maybe return {1,1,1,1} if there are no widget boxes?
     var positions = { 0: [], 1: [], 2:[] };
     $('.widget-box').each(function(){
       positions[positionKey[$(this).position().top]].push(positionKey[$(this).position().left]);
@@ -48,6 +50,9 @@
       }
     }
   };
+
+  //getFreeLocation is invoked, looks at the page and returns an object with info on an empy cell
+  //
 
   var spaceFree = function(widget)  {
     var canMove = true;

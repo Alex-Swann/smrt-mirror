@@ -22,9 +22,9 @@ $(document).ready(function(){
   $('.widget-check').click(function() {
     var widgetName = $(this).data('name');
     $(this).parent().toggleClass('active');
-    gridLocation = getFreeLocation();
+    var gridLocation = getFreeLocation(); //This can probably be used from within getJson instead of being passed around?
     getJSON(wjson.toggleActive, widgetName, gridLocation);
-    setDragBox(this, gridLocation);
+    setDragBox(this);
   });
 
   $('input:radio').click(function(){
