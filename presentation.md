@@ -10,5 +10,5 @@ The following is a scheleton for the presentation.
 | 3.5m |  0.5m  | Tech used-leap | Alex         |                                    | 
 | 4m   |  0.5m  | Testing        | Kasia        |                                    | 
 | 4.5m |  1m    | Code snippets  | Andrea       |                                    | 
-| 5m   |  0.5m  | Future features| Luke         |                                    | 
-| 5.5m ||||||
+| 5.5m   |  0.5m  | Future features| Luke         |                                    | 
+| 6m ||||||
